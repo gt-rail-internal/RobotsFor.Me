@@ -1,7 +1,7 @@
-rms [![Build Status](https://api.travis-ci.org/WPI-RAIL/rms.png)](https://travis-ci.org/WPI-RAIL/rms)
-===
+RobotsFor.Me [![Build Status](https://api.travis-ci.org/wpi-rail-internal/RobotsFor.Me.png)](https://travis-ci.org/wpi-rail-internal/RobotsFor.Me)
+============
 
-#### RMS (Robot Management System)
+#### Private fork of the RMS for use with RobotsFor.Me
 
 RMS is a remote lab and user study management tool designed for use with controlling ROS enabled robots from the web. RMS is built on-top of the popular [CakePHP](http://cakephp.org/) Model-View-Controller (MVC) framework.
 

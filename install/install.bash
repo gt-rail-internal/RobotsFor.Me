@@ -16,6 +16,7 @@ echo
 
 echo
 echo "Robot Management System Setup"
+echo "RobotsFor.Me Edition"
 echo "Author: Russell Toris - rctoris@wpi.edu"
 echo
 
@@ -68,14 +69,14 @@ sudo pear install cakephp/CakePHP-2.5.2 >> /dev/null
 echo
 echo "Linking RMS to Apache..."
 echo -e "\tinstalling site configuration..."
-sudo cp rms.conf /etc/apache2/sites-available/
+sudo cp robotsfor.me.conf redirect.conf /etc/apache2/sites-available/
 echo -e "\tdisabling default Apache site(s)..."
-sudo a2dissite 000-default.conf 000-default rms.conf > /dev/null 2>&1
+sudo a2dissite 000-default.conf 000-default rms.conf redirect.conf robotsfor.me.conf > /dev/null 2>&1
 echo -e "\tlinking RMS folder to Apache..."
 sudo rm -f /var/www/rms
 sudo ln -s $DIR/../app/ /var/www/rms
 echo -e "\trestarting Apache..."
-sudo a2ensite rms.conf > /dev/null
+sudo a2ensite robotsfor.me.conf redirect.conf > /dev/null
 sudo /etc/init.d/apache2 restart > /dev/null 2>&1
 
 ## Create a tmp folder
