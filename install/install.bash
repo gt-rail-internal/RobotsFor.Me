@@ -51,8 +51,8 @@ echo -e "\tupdating sources..."
 sudo apt-get update >> /dev/null
 echo -e "\tinstalling LAMP..."
 sudo apt-get install lamp-server^ php-pear php5-mcrypt -yy
-echo -e "\tenabling Apache mod-rewrite..."
-sudo a2enmod rewrite >> /dev/null
+echo -e "\tenabling Apache mod-rewrite and SSL..."
+sudo a2enmod rewrite ssl >> /dev/null
 echo -e "\tenabling PHP mcrypt..."
 sudo php5enmod mcrypt >> /dev/null 2>&1
 sudo service apache2 restart > /dev/null 2>&1
