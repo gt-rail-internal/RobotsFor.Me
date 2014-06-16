@@ -12,6 +12,8 @@ branches:
   only:
     - master
     - develop
+    - robotsfor.me-master
+    - robotsfor.me-develop
 
 before_script:
   - npm install -g grunt-cli
