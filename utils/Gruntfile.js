@@ -17,6 +17,11 @@ module.exports = function(grunt) {
           optimizationLevel: 7
         },
         files: {
+          '../app/webroot/img/RAIL-banner.png': '../app/webroot/img/RAIL-banner.png',
+          '../app/webroot/img/youbot-wsf.jpg': '../app/webroot/img/youbot-wsf.jpg',
+          '../app/webroot/img/sonia.jpg': '../app/webroot/img/sonia.jpg',
+          '../app/webroot/img/russell.jpg': '../app/webroot/img/russell.jpg',
+          '../app/webroot/img/dave.jpg': '../app/webroot/img/dave.jpg',
           '../app/webroot/img/banner.jpg': '../app/webroot/img/banner.jpg',
           '../app/webroot/img/ifaces/basic/teleop.png': '../app/webroot/img/ifaces/basic/teleop.png'
         }
